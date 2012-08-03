@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Date:
+  = @name.date
+%p
+  %b Time:
+  = @name.time
+%p
+  %b Venue:
+  = @name.venue
+%p
+  %b City:
+  = @name.city
+
+= link_to 'Edit', edit_name_path(@name)
+\|
+= link_to 'Back', names_path
