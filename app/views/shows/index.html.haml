@@ -1,0 +1,22 @@
+.template_time
+  Template random:
+  %strong= rand(900)+100
+  
+%div(data-pjax-container="true")
+
+  - @shows.each do |show|
+    %h3= show.name
+    .datetime
+      %span= show.date.to_s(:short)
+      %span= show.time.to_s(:ampm)
+    %p= show.venue
+    %p= show.city
+    %p= link_to 'Show', show
+    - if user_signed_in?
+      %p= link_to 'Edit', edit_show_path(show)
+      %p= link_to 'Destroy', show, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+- if user_signed_in?
+  = link_to 'New Show', new_show_path

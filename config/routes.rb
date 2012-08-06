@@ -1,5 +1,5 @@
 Smugsaints::Application.routes.draw do
-  resources :names
+  resources :shows
 
   devise_for :users
 

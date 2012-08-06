@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @show.name
+%p
+  %b Date:
+  = @show.date
+%p
+  %b Time:
+  = @show.time.to_s(:pretty)
+%p
+  %b Venue:
+  = @show.venue
+%p
+  %b City:
+  = @show.city
+
+= link_to 'Edit', edit_show_path(@show)
+\|
+= link_to 'Back', shows_path

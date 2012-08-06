@@ -1,0 +1,12 @@
+= simple_form_for(@show) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :date, :order => [:month, :day, :year]
+    = f.input :time, :ampm => true
+    = f.input :venue
+    = f.input :city
+
+  .form-actions
+    = f.button :submit

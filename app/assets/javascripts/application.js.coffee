@@ -10,4 +10,5 @@
 //= require bootstrap-button
 //= require bootstrap-collapse
 //= require bootstrap-carousel
+//= require jquery.pjax
 

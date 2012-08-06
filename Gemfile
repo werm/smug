@@ -50,4 +50,6 @@ gem "compass_twitter_bootstrap", :git => "git://github.com/vwall/compass-twitter
 gem "haml-rails"
 gem "simple_form"
 gem "country_select"
+gem 'rack-pjax'
+gem 'stamp'
 gem 'thin'
