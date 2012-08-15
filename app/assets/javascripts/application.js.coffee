@@ -1,4 +1,5 @@
 //= require jquery
+//= require jquery.ui.datepicker
 //= require jquery_ujs
 //= require init
 //= require bootstrap-dropdown
@@ -11,4 +12,6 @@
 //= require bootstrap-collapse
 //= require bootstrap-carousel
 //= require jquery.pjax
+//= require home
+//= require shows
 

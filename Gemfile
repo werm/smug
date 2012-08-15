@@ -44,9 +44,10 @@ gem 'jquery-rails'
 # gem 'debugger'
 
 gem "devise"
+gem "jquery-ui-rails"
 gem "therubyracer"
 gem "compass-rails"
-gem "compass_twitter_bootstrap", :git => "git://github.com/vwall/compass-twitter-bootstrap.git", :group => :assets
+gem "compass_twitter_bootstrap"#, :git => "git://github.com/vwall/compass-twitter-bootstrap.git", :group => :assets
 gem "haml-rails"
 gem "simple_form"
 gem "country_select"

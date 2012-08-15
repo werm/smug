@@ -3,7 +3,7 @@
 
   .form-inputs
     = f.input :name
-    = f.input :date, :order => [:month, :day, :year]
+    = f.input :date, :as => :string
     = f.input :time, :ampm => true
     = f.input :venue
     = f.input :city
